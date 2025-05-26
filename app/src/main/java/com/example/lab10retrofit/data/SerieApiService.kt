@@ -1,4 +1,4 @@
-package com.example.lab10retrofit.data;
+package com.example.lab10retrofit.data
 
 import retrofit2.Response
 import retrofit2.http.Body
@@ -23,8 +23,8 @@ interface SerieApiService {
 
     @PUT("serie/{id}")
     suspend fun updateSerie(
-            @Path("id") id: String,
-            @Body serie: SerieModel
+        @Path("id") id: String,
+        @Body serie: SerieModel
     ): Response<SerieModel>
 
     @DELETE("serie/{id}")
