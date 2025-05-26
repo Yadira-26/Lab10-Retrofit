@@ -1,5 +1,7 @@
 package com.example.lab10retrofit.data
 
+import com.google.gson.annotations.SerializedName
+
 data class SerieModel(
     @SerializedName("id")
     var id:Int,
